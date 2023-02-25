@@ -18,10 +18,10 @@ def valid(letter):
 def is_valid_cont():
   while True:
     n = input('Введите "да" или "нет": ')
-    if n.lower() not in ['да', 'д', 'нет', 'н']:
+    if n.strip().lower() not in ['да', 'д', 'нет', 'н']:
       print('Я вас не понял, вы, наверное, ввели что-то другое.')
       continue
-    elif n.lower() == 'д' or n.lower() == 'да':
+    elif n.strip().lower() == 'д' or n.strip().lower() == 'да':
       game()
     else:
       print('Спасибо, до встречи!')
